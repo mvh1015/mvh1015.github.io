@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Michael Harrison | Six Shooter Demo</title>
+<link rel="stylesheet" type="text/css" href="sixshooter.css"/>
+<script type="text/javascript" src="demo.js"></script>
+</head>
+
+<body onload="updatescreen();">
+	<div id="wrapper">
+		<header id="header">
+			<h2 id="six-shooter">Six Shooter Program</h2>
+			<div id="target">
+				<img id="target1" src="images/target.jpg" width="500" height="600" alt="target"/>
+			</div> <!--closes div that holds target image-->
+		</header>
+	
+		<!--navigation elements-->
+		
+		<nav id="info">
+			<section id="left">
+				<!--how much total ammo-->
+				<div class=ammo-box>
+					<p class=ammo-text>TOTAL AMMO</p>
+					<div id="total-ammo">
+				
+					</div>
+				</div>
+				<div class=ammo-box>
+					<p class=ammo-text>CURRENT AMMO</p>
+					<div id="current-ammo">
+				
+					</div>
+				</div>
+			</section>
+			<section id="right">
+				
+				<form class="form1">
+					<div class=button-box>
+						<p class="one">
+							<input type="button" class="shoot" value="Shoot" onclick="shoot();"/>
+						</p>
+					</div>
+					<div class=button-box>
+						<p class="two">
+							<input type="button" class="reload" value="Reload" onclick="reload();"/>
+						</p>
+					</div>
+				</form>
+			</section> <!--closes right section-->
+		</nav>
+	
+	
+	</div>
+	<footer>
+		<p>&copy; Copyright 2016, Javascript Class.</p>
+	</footer>
+	
+	<audio id="gun" src="sounds/gun.mp3"></audio>
+	<audio id="reload" src="sounds/reload.mp3"></audio>
+	<audio id="click" src="sounds/click.mp3"></audio>
+	<audio id="noAmmo" src="sounds/noAmmo.mp3"></audio>
+	
+	
+</body>
+</html>
