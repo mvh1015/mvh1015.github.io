@@ -1,7 +1,11 @@
 body{
 	margin: 0;
 	padding: 0;
-	background-color:rgb(43,43,43);
+	
+	background: -webkit-linear-gradient(#2B2B2B,#0D141A);
+	background:    -moz-linear-gradient(#2B2B2B,#0D141A);
+	background:         linear-gradient(#2B2B2B,#0D141A);
+	background-color:rgb(43,43,43);*/
 	background-image:url(images/bg.jpg);
 	font-family:Arial, Helvetica, sans-serif;
 	color:#e0e3e5;
@@ -32,7 +36,8 @@ h3{
 }
 
 #header{
-	
+	font-family:Palatino Linotype;
+	text-align:center;
 	float:left;
 	width:100%;
 	height:325px;
@@ -67,6 +72,7 @@ h3{
 
 .btn-container{
 	margin-top:9px;
+	font-family:Charcoal;
 	
 }
 
@@ -81,12 +87,19 @@ h3{
 	font-size:20px;
 	color:white;
 	text-decoration:none; /*gets rid of underline in links*/
-	text-shadow:2px 2px 4px black;
+	
+	
+}
+
+.link{
+	
+	color:white;
+	font-family: Trebuchet MS;
 	
 }
 
 .btn:hover{
-	transition: 3s;
+	transition: 0.5s;
 	background-color: white;
 	color: black;
 	
@@ -97,9 +110,9 @@ h3{
 	position:relative;
 	float:left;
 	padding:20px;
-	background: -webkit-linear-gradient(#293f50,#1D3A45);
-	background:    -moz-linear-gradient(#293f50,#1D3A45);
-	background:         linear-gradient(#293f50,#1D3A45);
+	background: -webkit-linear-gradient(#293f50,#0D141A);
+	background:    -moz-linear-gradient(#293f50,#0D141A);
+	background:         linear-gradient(#293f50,#0D141A);
 	background-color:rgb(29,58,69);
 	
 	box-shadow: 0px 3px 5px 1px black;
@@ -116,16 +129,27 @@ h3{
 .pic{
 	float:left;
 	margin-left: 125px;
-	width:250px;
+	width:400px;
 	height:250px;
+	
+	
+	
+	
+}
+
+.inpic{
 	border-radius: 20px;
+	box-shadow: 0px 5px 5px 2px black;
+	
+	
+	
 }
 
 .text{
 	height:240px;
 	margin-left: 525px;
 	margin-right:125px;
-	
+	font-family: Trebuchet MS;
 
 }
 
@@ -136,7 +160,7 @@ h3{
 	height:125px;
 	font-size:10px;
 	text-align:center;
-	background-color:rgb(15,23,33);
+	background-color:rgb(35,37,38);
 	line-height:100px;
 	bottom: 0;
 }
@@ -148,4 +172,5 @@ h3{
 	font-size:15px;
 	line-height:1px;
 	text-align:left;
+	font-family:Arial, Helvetica, sans-serif;
 }
