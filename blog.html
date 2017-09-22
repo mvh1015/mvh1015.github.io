@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Resume</title>
+<link rel="stylesheet" type="text/css" href="resume.css"/>
+
+<script type="text/javascript">
+
+</script>
+
+</head>
+<body>
+	
+	<header id="header">
+		<div class="wrapper">
+			<div id="header-text">
+				<h1>Michael Harrison </h1>
+				<h3>Software Developer</h3>
+				<h5>Scituate, Rhode Island</h5>
+			</div>
+		</div>
+	</header>
+	
+	<nav id="nav"> 
+		<div class="wrapper">
+			<div class="btn-container">
+				<a class="btn" href="index.html">HOME</a>
+				<a class="btn" href="index.html">PORTFOLIO</a>
+				<a class="btn" href="Resume.html">RESUME</a>
+				<a class="btn" href="#">BLOG</a>
+				<div class ="right">
+					<p>Michael Harrison</p>
+					<p>Email: mharrison101591@gmail.com</p>
+					<p>Phone: 401-477-6325</p>
+				</div>
+			</div> 
+			
+		</div>
+	</nav>
+	
+	<div class="wrapper">
+		<section id="sectionType2">
+			<div class="project">
+				<h2>Blog</h2>
+				
+			</div>
+			<div class="blog">
+				<h3 class="blogTitle">DigJumpDrill: An Informal PostMortem</h3>
+				<h4 class = "date"> 9/22/2017</h4>
+				<p> <br> Here I am, typing this up at 6:00 AM after a long night of finishing our 
+				Final Project, DigJumpDrill, an endless runner. Ten weeks, my partner and I have been
+				working on DigJumpDrill, with some highs, but mostly lows. I figured it would just start off
+				as another school project where you group up with a partner, start brainstorming ideas, and 
+				start building a prototype. This project started a little different though. <br><br><br>
+				
+				The first week began, and my partner already had a plan and a game design document. This was a bit
+				unexpected, but I figured that it could be fun following blindly into this. After a few suggestions, 
+				we ended up with an endless runner for an idea. My partner wanted it to be 3D, because he wanted to focus
+				on learning 3D character creation. I was hoping for 3D, because I wanted to make a well-structured and stable game, 
+				since we only had ten weeks to complete the assignment. We settled on 2.5D and started the prototype.
+				<br><br><br>
+				I began to think about what this game needed, and where we were going with it. I decided that the game 
+				needed to be fair to the player, and needed to scale fairly in difficulty. I felt like just speeding
+				up the game and throwing random obstacles would just be cheating. Instead, I came up with a whole 
+				plan for procedurally generating the endless levels. I drew out diagrams with tiers and hierarchies 
+				with names such as "sectors", "sections", and "segments".
+				<br><br><br>
+				Eventually I got to the point where I programmed it. It took a couple of weeks to get it working the way 
+				I wanted. I was able to customize what obstacles came and increase the difficulty as the game went by. It
+				was structured in such a way that I could create dynamic difficulty based on how well the player was doing.
+				I even created a simple instruction editor sheet, which a monkey could follow, if someone wanted to create their
+				own sectors or segments. 
+				<br><br><br>
+				Finally, it was all done, and it was time to test to playtest it. At that point I realized, nobody could even
+				see behind all of the code I did. It was just as random to them, as a simple random number generator. Players
+				didn't care about the difficulty. Most got bored after a minute, before half my my system even kicked in. This
+				is when I found out how boring our game actually was. All you could do was dig, jump, and drill. Three things. 
+				<br><br><br>
+				I didn't want a boring game. How could i get people to want to play it? "It needs something more." This is 
+				the quote that I kept repeating for the final four weeks. My partner felt the same way, but he had plenty of 
+				detailing and work to do to all of the game art assets, so I was basically on my own when it came to making
+				the mechanics and progression better for the players. 
+				
+				<br><br><br>
+				I playtested the other groups' games and was trying to find out what made each one fun. I noticed
+				people having the most fun with trying to get highscores. My game didn't have a highscore yet, so
+				that's exactly what I started working on. I realized that after getting a high score in my game, 
+				it was hard to motivate yourself to play again and beat that highscore. The game needed some kind of 
+				progression system. Combining a progression system and highscores meant that I would need to create a 
+				player profile system. That was exactly what I did next.
+				
+				<br><br><br>
+				I created a system where you could log in and out of a player name. Each player name could keep and own their 
+				own progress. What progress could we give them though. My first idea was to create a shop. Allow them to collect
+				coins in game, and use these coins to upgrade their power ups, allowing them to last longer. After doing this,
+				it still felt like it needed more. The power up upgrades did help the player last longer, allowing them to beat
+				their previous highscores more, but they still weren't motivated to do so. 
+				
+				<br><br><br>
+				At this point, my partner is just creating more art each day, and is getting worried that I am going to keep adding
+				more and more, which may conflict with his plans. I knew he was worried about this, so I did as much as I could to 
+				create fun, without creating any extra design projects for him to work on. I tried adding more items to the shop, like extra lives,
+				but it was barely helping. 
+				
+				<br><br><br>
+				It was getting very close to the deadline, so I realized that adding more and more features at this point wasn't a good idea. 
+				I focused on the small details, particle effects, sounds, and transitions. I started to add some humor to the game, hoping this
+				would distract people from the other boring parts. The game started to feel a lot better, especially with 
+				the new super powerup, with a heavy metal riff when you collected a special powerup. 
+				
+				<br><br><br>
+				Late last night, I still wasn't very happy with the game. Even though I felt like we were going to get a good grade on it, it still needed more.
+				It bugged me. There was no reward for playing the game and nothing to achieve. Even though I knew I'd be up all night, I decided to solve this problem
+				in one of the simplest ways possible, by adding achievements. When the player gets these achievements, such as playing ten games, or collecting 1000 coins in
+				a single game, a score multiplier is added. The more achievements they get, the higher score they get. This means that people who play more, will have a huge 
+				advantage at getting to the highscore leaderboard. It might be cheap and dirty, but it made me feel a lot better about the game. 
+				
+				<br><br><br>
+				After this ten week project, there were plenty of small technical things I learned, such as data persistence and Unity's animator, but
+				I felt like the biggest problem I had to tackle was creating a fun environment for the player. At first, I was thinking too logically, 
+				but the problem with that is, people don't play games to be logical. Most players just like pretty things that make them feel good,
+				like explosions and achievements. One thing I wish my game did was challenge the player. Currently, the game is just a grind. I did make
+				the game a little bit more fast paced, but it wasn't enough, and if I made it any faster, it would just become unfair. My biggest issue that 
+				I need to work on when it comes to making games, is balancing reward and challenge.
+				
+				</p>
+			</div>
+			
+		</section> 
+	</div>	
+		
+		
+	<footer id="footer">
+		<p>&copy; Copyright 2017</p>
+	</footer> 
+	
+
+</body>
+</html>
